@@ -16,5 +16,3 @@ void print_numbers(void)
 	}
 	_putchar('\n');
 }
-Footer
-© 2023 GitHub, Inc.
