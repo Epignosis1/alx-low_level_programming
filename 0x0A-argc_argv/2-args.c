@@ -1,17 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
- * main- prints all arguement that it receives
- * @argc: counts of arguement entered in the command line
- * @argv: array that holds the string
- * Return: Always 0
+ * main - entry point
+ * Description: prints all command line arguements
+ * @argc: the count of arguements
+ * @argv: the array of arguements
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
 	int i;
 
-
-	for (i = 1; i < argc; i++)
+	for (i = 0; i < argc; i++)
 	{
 		printf("%s\n", argv[i]);
 	}
