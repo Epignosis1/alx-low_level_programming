@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "pointer.h"
+#include "function_pointers.h"
 /**
  * int_index - indexes array
  * @array: array to go through
@@ -10,15 +10,15 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int a;
+	int index;
 
 	if (size <= 0 || array == NULL || cmp == NULL)
 		return (-1);
-	while (a < size)
+	for (index = 0; index < size; index++)
 	{
-		a++;
-		if (cmp(array[a]))
-			return (a);
+		if (cmp(array[index]))
+			return (index);
 	}
 	return (-1);
 }
+
