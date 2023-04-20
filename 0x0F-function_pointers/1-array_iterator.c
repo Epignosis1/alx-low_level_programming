@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "pointer.h"
+#include "function_pointers.c"
 #include <stddef.h>
 #include <stdlib.h>
 /**
